@@ -30,7 +30,7 @@ def eruv_scrape(event, context):
     html_string = '<html><head></head><body>'
     for i in text:
         if text.index(i) == 0:
-            if 'UP' in i:
+            if 'up' in i.lower():
                 html_string += '<p style="color:green">' + i + '</p><hr>'
             else:
                 html_string += '<p style="color:red">' + i + '</p><hr>'
